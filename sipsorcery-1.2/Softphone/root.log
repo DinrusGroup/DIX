@@ -1,0 +1,55 @@
+2017-04-14 21:34:52,259 [1] DEBUG sipsorcery [(null)] - Logging initialised.
+2017-04-14 21:35:23,696 [1] DEBUG sipsorcery [(null)] - Default local IPv4 address determined as 192.168.1.2.
+2017-04-14 21:35:25,265 [4] DEBUG sipsorcery [(null)] - Commencing bind on XMPP client.
+2017-04-14 21:35:27,396 [4] DEBUG sipsorcery [(null)] - XMPP client is connected to talk.google.com:5222.
+2017-04-14 21:35:29,020 [sipchanneludp-4049] DEBUG sipsorcery.sip [(null)] - SIPUDPChannel socket on udp:192.168.1.2:5060 listening started.
+2017-04-14 21:35:29,020 [3] DEBUG sipsorcery.sip [(null)] - SIPUDPChannel listener created 192.168.1.2:5060.
+2017-04-14 21:35:29,816 [stunclient] DEBUG sipsorcery [(null)] - STUN client started.
+2017-04-14 21:35:29,816 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2017-04-14 21:35:30,660 [4] DEBUG xmpptrace [(null)] - Send=>
+2017-04-14 21:35:30,660 [4] DEBUG xmpptrace [(null)] - <?xml version="1.0" encoding="utf-8"?>
+<stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2017-04-14 21:35:31,903 [4] DEBUG xmpptrace [(null)] - Receive=>
+2017-04-14 21:35:31,903 [4] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="BF65B0C6C8D3303D" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client"><stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"><required/></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism></mechanisms></stream:features>
+2017-04-14 21:35:31,981 [8] DEBUG sipsorcery [(null)] - STUNClient Response to initial STUN message received from 217.10.68.152:3478.
+2017-04-14 21:35:31,981 [4] DEBUG sipsorcery [(null)] - XMPPInitialStream TLS is required.
+2017-04-14 21:35:31,997 [8] DEBUG sipsorcery [(null)] - STUNClient Public IP=62.183.125.220.
+2017-04-14 21:35:31,997 [stunclient] DEBUG sipsorcery [(null)] - The STUN client was able to determine the public IP address as 62.183.125.220.
+2017-04-14 21:35:31,997 [4] DEBUG xmpptrace [(null)] - Send=>
+2017-04-14 21:35:31,997 [4] DEBUG xmpptrace [(null)] - <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls" />
+2017-04-14 21:35:32,059 [4] DEBUG xmpptrace [(null)] - Receive=>
+2017-04-14 21:35:32,059 [4] DEBUG xmpptrace [(null)] - <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+2017-04-14 21:35:32,075 [4] DEBUG sipsorcery [(null)] - XMPP client initiating TLS connection.
+2017-04-14 21:35:35,348 [4] DEBUG sipsorcery [(null)] - XMPP Server Certificate: CN=*.google.com, O=Google Inc, L=Mountain View, S=California, C=US
+2017-04-14 21:35:35,348 [4] DEBUG xmpptrace [(null)] - Send=>
+2017-04-14 21:35:35,348 [4] DEBUG xmpptrace [(null)] - <stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2017-04-14 21:35:35,417 [4] DEBUG xmpptrace [(null)] - Receive=>
+2017-04-14 21:35:35,417 [4] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="BF26321722584B4F" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2017-04-14 21:35:35,430 [4] DEBUG xmpptrace [(null)] - Receive=>
+2017-04-14 21:35:35,430 [4] DEBUG xmpptrace [(null)] - <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+2017-04-14 21:35:35,432 [4] DEBUG sipsorcery [(null)] - XMPPEncryptedStream SASL authentication is required.
+2017-04-14 21:35:35,440 [4] DEBUG xmpptrace [(null)] - Send=>
+2017-04-14 21:35:35,440 [4] DEBUG xmpptrace [(null)] - <auth mechanism="PLAIN" xmlns="urn:ietf:params:xml:ns:xmpp-sasl">AHVzZXJAZ21haWwuY29tAHBhc3N3b3Jk</auth>
+2017-04-14 21:35:35,508 [4] DEBUG xmpptrace [(null)] - Receive=>
+2017-04-14 21:35:35,508 [4] DEBUG xmpptrace [(null)] - <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+2017-04-14 21:35:35,508 [4] WARN  sipsorcery [(null)] - XMPPStream failure: not-authorized
+2017-04-14 21:35:35,508 [4] DEBUG sipsorcery [(null)] - Closing XMPPStream.
+2017-04-14 21:35:35,508 [4] DEBUG xmpptrace [(null)] - Send=>
+2017-04-14 21:35:35,508 [4] DEBUG xmpptrace [(null)] - </stream:stream>
+2017-04-14 21:35:35,524 [4] ERROR sipsorcery [(null)] - Exception XMPPClient.Connect. Failure attempting to authenticate XMPP stream.
+2017-04-14 21:35:35,540 [4] DEBUG sipsorcery [(null)] - The Google Voice XMPP client connection was unexpectedly disconnected.
+2017-04-14 21:35:36,354 [1] DEBUG sipsorcery [(null)] - The Google Voice XMPP client connection was unexpectedly disconnected.
+2017-04-14 21:36:29,224 [1] DEBUG sipsorcery.sip [(null)] - Closing SIP UDP Channel udp:192.168.1.2:5060.
+2017-04-14 21:36:29,224 [1] DEBUG sipsorcery.sip [(null)] - SIPTransport Shutdown Complete.
+2017-04-14 21:36:29,224 [siptransport-receive] WARN  sipsorcery.sip [(null)] - SIPTransport process received messsages thread stopped.
+2017-04-14 21:36:29,271 [sipchanneludp-4049] DEBUG sipsorcery.sip [(null)] - SIPUDPChannel socket on udp:192.168.1.2:5060 listening halted.
+2017-04-14 21:36:29,318 [1] DEBUG dnslookup [(null)] - Initialising DNS resolver with operating system DNS server entries.
+2017-04-14 21:36:29,552 [1] DEBUG dnslookup [(null)] - DNSManager Stopping.
+2017-04-14 21:36:29,552 [stunclient] WARN  sipsorcery [(null)] - STUN client thread stopped.
+2017-04-14 21:36:29,708 [dnslookup-0] DEBUG dnslookup [(null)] - DNSManager thread shutdown.
+2017-04-14 21:36:29,724 [dnslookup-1] DEBUG dnslookup [(null)] - DNSManager thread shutdown.
+2017-04-14 21:36:29,724 [dnslookup-2] DEBUG dnslookup [(null)] - DNSManager thread shutdown.
+2017-04-14 21:36:29,724 [dnslookup-3] DEBUG dnslookup [(null)] - DNSManager thread shutdown.
+2017-04-14 21:36:29,724 [dnslookup-4] DEBUG dnslookup [(null)] - DNSManager thread shutdown.

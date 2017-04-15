@@ -1,0 +1,69 @@
+2015-10-18 15:25:44,684 [1] DEBUG sipsorcery [(null)] - Logging initialised.
+2015-10-18 15:25:45,104 [1] DEBUG sipsorcery [(null)] - Default local IPv4 address determined as 192.168.1.3.
+2015-10-18 15:25:45,295 [sipchanneludp-7785] DEBUG sipsorcery.sip [(null)] - SIPUDPChannel socket on udp:192.168.1.3:5060 listening started.
+2015-10-18 15:25:45,305 [3] DEBUG sipsorcery.sip [(null)] - SIPUDPChannel listener created 192.168.1.3:5060.
+2015-10-18 15:25:45,323 [3] DEBUG sipsorcery [(null)] - Commencing bind on XMPP client.
+2015-10-18 15:25:46,652 [stunclient] DEBUG sipsorcery [(null)] - STUN client started.
+2015-10-18 15:25:46,655 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2015-10-18 15:25:47,770 [3] DEBUG sipsorcery [(null)] - XMPP client is connected to talk.google.com:5222.
+2015-10-18 15:25:47,788 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:47,789 [3] DEBUG xmpptrace [(null)] - <?xml version="1.0" encoding="utf-8"?>
+<stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-10-18 15:25:48,495 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:48,495 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="1121D798591BFC9A" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2015-10-18 15:25:50,747 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:50,747 [3] DEBUG xmpptrace [(null)] - <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"><required/></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism></mechanisms></stream:features>
+2015-10-18 15:25:50,753 [3] DEBUG sipsorcery [(null)] - XMPPInitialStream TLS is required.
+2015-10-18 15:25:50,754 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:50,754 [3] DEBUG xmpptrace [(null)] - <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls" />
+2015-10-18 15:25:50,838 [stunclient] WARN  sipsorcery [(null)] - STUNClient server response timedout after 3s.
+2015-10-18 15:25:50,840 [8] WARN  sipsorcery [(null)] - Exception STUNClient Receive. Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Sockets.Socket".
+2015-10-18 15:25:50,841 [stunclient] DEBUG sipsorcery [(null)] - The STUN client could not determine the public IP address.
+2015-10-18 15:25:51,568 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:51,568 [3] DEBUG xmpptrace [(null)] - <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+2015-10-18 15:25:51,570 [3] DEBUG sipsorcery [(null)] - XMPP client initiating TLS connection.
+2015-10-18 15:25:53,713 [3] DEBUG sipsorcery [(null)] - XMPP Server Certificate: CN=*.google.com, O=Google Inc, L=Mountain View, S=California, C=US
+2015-10-18 15:25:53,714 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:53,714 [3] DEBUG xmpptrace [(null)] - <stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-10-18 15:25:54,957 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:54,957 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="8943CBA2E3E83521" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2015-10-18 15:25:54,968 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:54,968 [3] DEBUG xmpptrace [(null)] - <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+2015-10-18 15:25:54,970 [3] DEBUG sipsorcery [(null)] - XMPPEncryptedStream SASL authentication is required.
+2015-10-18 15:25:54,970 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:54,970 [3] DEBUG xmpptrace [(null)] - <auth mechanism="PLAIN" xmlns="urn:ietf:params:xml:ns:xmpp-sasl">AHVzZXJAZ21haWwuY29tAHBhc3N3b3Jk</auth>
+2015-10-18 15:25:55,847 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:55,848 [3] DEBUG xmpptrace [(null)] - <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+2015-10-18 15:25:55,849 [3] WARN  sipsorcery [(null)] - XMPPStream failure: not-authorized
+2015-10-18 15:25:55,849 [3] DEBUG sipsorcery [(null)] - Closing XMPPStream.
+2015-10-18 15:25:55,849 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:55,849 [3] DEBUG xmpptrace [(null)] - </stream:stream>
+2015-10-18 15:25:55,850 [3] ERROR sipsorcery [(null)] - Exception XMPPClient.Connect. Failure attempting to authenticate XMPP stream.
+2015-10-18 15:25:55,851 [3] DEBUG sipsorcery [(null)] - The Google Voice XMPP client connection was unexpectedly disconnected.
+2015-10-18 15:25:55,854 [1] DEBUG sipsorcery [(null)] - The Google Voice XMPP client connection was unexpectedly disconnected.
+2015-10-18 15:26:50,846 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2015-10-18 15:26:51,982 [9] DEBUG sipsorcery [(null)] - STUNClient Response to initial STUN message received from 217.10.68.152:3478.
+2015-10-18 15:26:51,987 [9] DEBUG sipsorcery [(null)] - STUNClient Public IP=94.233.230.177.
+2015-10-18 15:26:51,987 [stunclient] DEBUG sipsorcery [(null)] - The STUN client was able to determine the public IP address as 94.233.230.177.
+2015-10-18 15:27:51,988 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2015-10-18 15:27:53,028 [9] DEBUG sipsorcery [(null)] - STUNClient Response to initial STUN message received from 217.10.68.152:3478.
+2015-10-18 15:27:53,028 [9] DEBUG sipsorcery [(null)] - STUNClient Public IP=94.233.230.177.
+2015-10-18 15:27:53,028 [stunclient] DEBUG sipsorcery [(null)] - The STUN client was able to determine the public IP address as 94.233.230.177.
+2015-10-18 15:28:53,028 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2015-10-18 15:28:53,992 [7] DEBUG sipsorcery [(null)] - STUNClient Response to initial STUN message received from 217.10.68.152:3478.
+2015-10-18 15:28:53,992 [7] DEBUG sipsorcery [(null)] - STUNClient Public IP=94.233.230.177.
+2015-10-18 15:28:53,992 [stunclient] DEBUG sipsorcery [(null)] - The STUN client was able to determine the public IP address as 94.233.230.177.
+2015-10-18 15:29:53,993 [stunclient] DEBUG sipsorcery [(null)] - STUNClient attempting to determine public IP from stun.ekiga.net.
+2015-10-18 15:29:56,996 [stunclient] WARN  sipsorcery [(null)] - STUNClient server response timedout after 3s.
+2015-10-18 15:29:56,996 [stunclient] DEBUG sipsorcery [(null)] - The STUN client could not determine the public IP address.
+2015-10-18 15:29:57,009 [10] WARN  sipsorcery [(null)] - Exception STUNClient Receive. Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Sockets.UdpClient".
+2015-10-18 15:30:26,080 [1] DEBUG sipsorcery [(null)] - calling postmaster@localhost.
+2015-10-18 15:30:27,131 [9] DEBUG sipsorcery [(null)] - Starting call to sip:postmaster@localhost.
+2015-10-18 15:30:27,131 [1] DEBUG sipsorcery [(null)] - Starting call to sip:postmaster@localhost.
+2015-10-18 15:30:27,928 [udplistener-8760] DEBUG sipsorcery [(null)] - UDPListener socket on 192.168.1.3:10000 listening started.
+2015-10-18 15:30:27,928 [9] DEBUG sipsorcery [(null)] - UDPListener listener created 192.168.1.3:10000.
+2015-10-18 15:30:27,929 [9] DEBUG audiodevice [(null)] - RTP channel endpoint 192.168.1.3:10000

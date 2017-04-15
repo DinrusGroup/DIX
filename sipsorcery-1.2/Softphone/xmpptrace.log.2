@@ -1,0 +1,25 @@
+2015-10-18 15:25:47,788 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:47,789 [3] DEBUG xmpptrace [(null)] - <?xml version="1.0" encoding="utf-8"?>
+<stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-10-18 15:25:48,495 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:48,495 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="1121D798591BFC9A" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2015-10-18 15:25:50,747 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:50,747 [3] DEBUG xmpptrace [(null)] - <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"><required/></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism></mechanisms></stream:features>
+2015-10-18 15:25:50,754 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:50,754 [3] DEBUG xmpptrace [(null)] - <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls" />
+2015-10-18 15:25:51,568 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:51,568 [3] DEBUG xmpptrace [(null)] - <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+2015-10-18 15:25:53,714 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:53,714 [3] DEBUG xmpptrace [(null)] - <stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-10-18 15:25:54,957 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:54,957 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="8943CBA2E3E83521" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2015-10-18 15:25:54,968 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:54,968 [3] DEBUG xmpptrace [(null)] - <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+2015-10-18 15:25:54,970 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:54,970 [3] DEBUG xmpptrace [(null)] - <auth mechanism="PLAIN" xmlns="urn:ietf:params:xml:ns:xmpp-sasl">AHVzZXJAZ21haWwuY29tAHBhc3N3b3Jk</auth>
+2015-10-18 15:25:55,847 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-10-18 15:25:55,848 [3] DEBUG xmpptrace [(null)] - <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+2015-10-18 15:25:55,849 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-10-18 15:25:55,849 [3] DEBUG xmpptrace [(null)] - </stream:stream>

@@ -1,0 +1,23 @@
+2015-12-05 21:17:22,334 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-12-05 21:17:22,334 [3] DEBUG xmpptrace [(null)] - <?xml version="1.0" encoding="utf-8"?>
+<stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-12-05 21:17:25,397 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-12-05 21:17:25,397 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="718467A6BDEC39FE" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client"><stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"><required/></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism></mechanisms></stream:features>
+2015-12-05 21:17:25,428 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-12-05 21:17:25,428 [3] DEBUG xmpptrace [(null)] - <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls" />
+2015-12-05 21:17:26,053 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-12-05 21:17:26,053 [3] DEBUG xmpptrace [(null)] - <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+2015-12-05 21:17:27,756 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-12-05 21:17:27,756 [3] DEBUG xmpptrace [(null)] - <stream:stream to="google.com" version="1.0" xml:lang="en" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - <stream:stream from="google.com" id="5A5A127A06F0A2BA" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>X-OAUTH2</mechanism><mechanism>X-GOOGLE-TOKEN</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-12-05 21:17:29,163 [3] DEBUG xmpptrace [(null)] - <auth mechanism="PLAIN" xmlns="urn:ietf:params:xml:ns:xmpp-sasl">AHVzZXJAZ21haWwuY29tAHBhc3N3b3Jk</auth>
+2015-12-05 21:17:29,647 [3] DEBUG xmpptrace [(null)] - Receive=>
+2015-12-05 21:17:29,647 [3] DEBUG xmpptrace [(null)] - <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+2015-12-05 21:17:29,647 [3] DEBUG xmpptrace [(null)] - Send=>
+2015-12-05 21:17:29,647 [3] DEBUG xmpptrace [(null)] - </stream:stream>
